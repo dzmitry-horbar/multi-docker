@@ -16,7 +16,7 @@ after_success:
     # log in to docker cli
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # take those images and push them to docker hub
-    - docker push gorbar/multi-client
-    - docker push gorbar/multi-nginx
-    - docker push gorbar/multi-server
-    - docker push gorbar/multi-worker
+    - docker push dmitry-gorbar/multi-client
+    - docker push dmitry-gorbar/multi-nginx
+    - docker push dmitry-gorbar/multi-server
+    - docker push dmitry-gorbar/multi-worker
